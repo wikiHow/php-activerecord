@@ -344,8 +344,8 @@ abstract class AbstractRelationship implements InterfaceRelationship
 		{
 			$join_table = $from_table;
 			$join_table_name = $from_table->get_fully_qualified_table_name();
-			$from_table_name = Table::load($this->class_name)->get_fully_qualified_table_name();
- 		}
+			$from_table_name = Table::load($class_name)->get_fully_qualified_table_name();
+		}
 		else
 		{
 			$join_table = Table::load($this->class_name);
